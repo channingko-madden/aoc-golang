@@ -1,1 +1,3 @@
-# aoc-2023-golang
+# aoc-golang
+
+Advent of Code puzzles using go
