@@ -1,3 +1,3 @@
-module aoc-2023-golang
+module github.com/channingko-madden/aoc-golang
 
-go 1.21.4
+go 1.25
