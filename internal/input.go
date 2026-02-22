@@ -5,8 +5,8 @@ import (
 	"os"
 )
 
-// Data for this is a file with a alphanumeric string on each line
-// Read the file and return a slice containing each string in the file
+// Data for this is a file with alphanumeric characters on each line
+// Read the file and return a slice containing each line in the file
 func ReadAndParseData(filename string) []string {
 
 	file, err := os.Open(filename)
