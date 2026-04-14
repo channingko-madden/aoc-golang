@@ -5,7 +5,6 @@ import (
 	"os"
 )
 
-// Data for this is a file with alphanumeric characters on each line
 // Read the file and return a slice containing each line in the file
 func ReadAndParseData(filename string) []string {
 
