@@ -33,19 +33,19 @@ func TestParseLine(t *testing.T) {
 func TestGetNeighbors(t *testing.T) {
 	testCases := []struct {
 		name   string
-		input  Part1Point
-		output []Part1Point
+		input  Point
+		output []Point
 	}{
 		{
 			"origin",
-			Part1Point{row: 0, col: 0}, []Part1Point{
+			Point{row: 0, col: 0}, []Point{
 				{row: 1, col: 0},
 				{row: 1, col: 1},
 				{row: 0, col: 1},
 			}},
 		{
 			"top edge",
-			Part1Point{row: 0, col: 1}, []Part1Point{
+			Point{row: 0, col: 1}, []Point{
 				{row: 1, col: 1},
 				{row: 1, col: 0},
 				{row: 1, col: 2},
@@ -54,14 +54,14 @@ func TestGetNeighbors(t *testing.T) {
 			}},
 		{
 			"top right corner",
-			Part1Point{row: 0, col: 2}, []Part1Point{
+			Point{row: 0, col: 2}, []Point{
 				{row: 1, col: 2},
 				{row: 1, col: 1},
 				{row: 0, col: 1},
 			}},
 		{
 			"right edge",
-			Part1Point{row: 1, col: 2}, []Part1Point{
+			Point{row: 1, col: 2}, []Point{
 				{row: 0, col: 2},
 				{row: 0, col: 1},
 				{row: 2, col: 2},
@@ -70,14 +70,14 @@ func TestGetNeighbors(t *testing.T) {
 			}},
 		{
 			"bottom right corner",
-			Part1Point{row: 2, col: 2}, []Part1Point{
+			Point{row: 2, col: 2}, []Point{
 				{row: 1, col: 2},
 				{row: 1, col: 1},
 				{row: 2, col: 1},
 			}},
 		{
 			"bottom edge",
-			Part1Point{row: 2, col: 1}, []Part1Point{
+			Point{row: 2, col: 1}, []Point{
 				{row: 1, col: 1},
 				{row: 1, col: 0},
 				{row: 1, col: 2},
@@ -86,14 +86,14 @@ func TestGetNeighbors(t *testing.T) {
 			}},
 		{
 			"bottom left corner",
-			Part1Point{row: 2, col: 0}, []Part1Point{
+			Point{row: 2, col: 0}, []Point{
 				{row: 1, col: 0},
 				{row: 1, col: 1},
 				{row: 2, col: 1},
 			}},
 		{
 			"left edge",
-			Part1Point{row: 1, col: 0}, []Part1Point{
+			Point{row: 1, col: 0}, []Point{
 				{row: 0, col: 0},
 				{row: 0, col: 1},
 				{row: 2, col: 0},
@@ -102,7 +102,7 @@ func TestGetNeighbors(t *testing.T) {
 			}},
 		{
 			"center",
-			Part1Point{row: 1, col: 1}, []Part1Point{
+			Point{row: 1, col: 1}, []Point{
 				{row: 0, col: 1},
 				{row: 0, col: 0},
 				{row: 0, col: 2},

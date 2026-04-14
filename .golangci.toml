@@ -1,0 +1,14 @@
+version = "2"
+
+[formatters]
+
+enable = [
+        "golines",
+        "gofmt"
+]
+
+[formatters.settings]
+
+[formatters.settings.golines]
+max-len = 120
+
